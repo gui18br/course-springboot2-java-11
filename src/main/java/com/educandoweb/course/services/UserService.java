@@ -50,7 +50,7 @@ public class UserService {
 		upadateData(entity, obj);
 		return repository.save(entity);
 		}catch (EntityNotFoundException e) {
-			throw new ResourceNotFoundException(id)
+			throw new ResourceNotFoundException(id);
 		}
 	}
 
